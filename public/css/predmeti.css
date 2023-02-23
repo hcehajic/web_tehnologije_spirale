@@ -1,0 +1,43 @@
+body {
+    background-color: #152238;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #152238;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+#btnOdjava {
+    background-color: #3a506b;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#divListaPredmeta, #tabela2 {
+    background-color: #3a506b;
+    color: white;
+    padding: 2em;
+    width: 95%;
+    margin: 1em;
+    border-radius: 5px;
+    display: flex; justify-content: center;
+    text-align: center;
+}
+
+#divListaPredmeta h2, #tabela h2 {
+    margin: 0;
+    color: white;
+}

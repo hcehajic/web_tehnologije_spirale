@@ -1,0 +1,130 @@
+/* Sljedeca 2 stila su da se ne bi preklapao meni sa ostatkom stranice prilikom */
+/* loadanja stranice i tokom navigacije kroz meni */
+
+/*
+html {
+    scroll-padding-top: 350px;
+}
+*/
+
+/* Za pozadinsku boju stranice koristio sam darkkhaki  */
+/* da bi se uocilo da je boja redovnih predmeta, kao i */
+/* menija za navigaciju bijela.                        */
+body {
+    background-color: darkkhaki;
+    /*
+    margin: 0;
+    overflow-y: scroll;
+    padding-top: 350px;
+    */
+}
+
+/* Stil za nepobrojanu lsitu menija za situaciju ako */
+/* je sirina prozora u browseru do 300px iz postavke */
+ul {
+    display: inline;
+    list-style: none;
+}
+
+li {
+    margin-left: 20%;
+    width: max-content;
+}
+
+a {
+    margin-right: 10px;
+}
+
+.naziv {
+    margin-left: 0px;
+}
+
+img {
+    height: 100px;
+    width: 200px;
+}
+
+/* CSS za grid predmeta za svaku godinu */
+.grid_predmeta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 200px));
+    gap: 10px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+/* CSS za svaki pojedinacan predmet */
+.predmet {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+}
+
+/* CSS podesavanje pozadinske boje za predmete koji su izborni */
+.izborni_predmet {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: powderblue;
+}
+
+/* CSS podesavanje pozadinske boje za predmete koji ne idu u ovoj akademskoj godini */
+.predmet_ne_ide {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: gray;
+}
+
+/* Sljedeca 3 stila su da bi se centrirao tekst za svaki smijer, godinu i predmet*/
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Stil za nepobrojanu lsitu menija za situaciju ako */
+/* je sirina prozora u browseru do 300px iz postavke */
+#nepobrojana_lista {
+    position: static;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    top: 0px;
+    background-color: white;
+}
+
+/* Za sirinu prozora vecu od 300px */
+@media screen and (min-width: 300px) {
+
+    /* Sljedeca 2 stila su da se ne bi preklapao meni sa ostatkom stranice prilikom */
+    /* loadanja stranice i tokom navigacije kroz meni */
+    html {
+        scroll-padding-top: 130px;
+    }
+    
+    body {
+        margin: 0;
+        overflow-y: scroll;
+        padding-top: 130px;
+    }
+
+    /* CSS za meni sa linkovima koji se uvijek prikazuje na vrhu stranice */
+    #nepobrojana_lista {
+        position: fixed;
+        height: 130px;
+        justify-content: space-evenly;
+        align-items: stretch;
+        display: flex;
+    }
+}
